@@ -1,0 +1,20 @@
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+  <div>Bienvenido<br /><span>Siete Cielos</span></div>
+</div>
+<br />
+<div class="login">
+  <br />
+  <form [formGroup]="myForm">
+    <input
+      formControlName="codigo"
+      type="password"
+      placeholder="Codigo"
+      (keyup.enter)="loginPrueba()"
+      id="password"
+      [(ngModel)]="credenciales.ingreso"
+    /><br />
+    <input type="button" value="Ingresar" (click)="loginPrueba()" />
+  </form>
+</div>

@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{"Reglamento" | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="select">
+    <ion-label> {{"Idioma" | translate}} </ion-label>
+    <ion-select cancelText="Cancel" placeholder="Selecciona" (ionChange)="changeLang($event)">
+      <ion-select-option *ngFor="let lang of langs">{{lang}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <div class="content">
+    <ion-list>
+      <ion-list-header lines="inset">
+        <ion-label class="title">{{"Regl" | translate}}</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-text>{{"ReglLabel" | translate}}</ion-text>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header lines="full">
+        <ion-label class="title">{{"Oblicaciones" | translate}}</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-text>{{"OL1" | translate}}
+        </ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text>{{"OL2" | translate}}
+        </ion-text>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header lines="full">
+        <ion-label class="title">{{"O2" | translate}}</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-text>{{"O2L" | translate}}
+        </ion-text>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header lines="inset">
+        <ion-label class="title">{{"O3" | translate}}</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-text>{{"O3L" | translate}}
+        </ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text>{{"O3L2" | translate}}
+        </ion-text>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header lines="full">
+        <ion-label class="title">{{"O4" | translate}}</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-text>{{"O4L" | translate}}
+        </ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text>{{"O4L2" | translate}}
+        </ion-text>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

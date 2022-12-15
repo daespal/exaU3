@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{"Huesped" | translate}} {{huesped.nombre || ""}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="text-align: center">
+    <ion-card-header>
+      <ion-card-title>{{huesped.nombre}}</ion-card-title>
+      <ion-card-subtitle>{{"Habitacion" | translate}}: {{huesped.habitacion}}</ion-card-subtitle>
+      <ion-card-subtitle>{{"Ingreso" | translate}}: {{huesped.fechaIni}}</ion-card-subtitle>
+      <ion-card-subtitle>{{"Salida" | translate}}: {{huesped.fechaEgr}}</ion-card-subtitle>
+      <ion-card-subtitle>{{"Telefono" | translate}}: {{huesped.telefono}}</ion-card-subtitle> <br>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/37/Lag_samao.JPG"
+        width="500"
+        height="500"
+      />
+    </ion-card-header>
+  </ion-card>
+  <ion-button (click)="iracamara()">Camara</ion-button>
+</ion-content>
